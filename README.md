@@ -8,8 +8,8 @@
 <br>
 
 <div align="center">
-  <a href="https://open.spotify.com/" style="text-decoration: none; color: #1DB954; font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-weight: 500;">
-    ▶&nbsp;&nbsp;Сейчас играет в Spotify
+  <a href="https://open.spotify.com/track/7MXVkk9YMqq6vqLSZcg00c">
+    <img src="spotify.svg" alt="Spotify Player" width="400">
   </a>
 </div>
 
