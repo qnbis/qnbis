@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV">
-    <img src="spotify.svg?v=3" alt="Spotify Player" width="400">
+    <img src="spotify_player.svg" alt="Spotify Player" width="400">
   </a>
 </div>
 
