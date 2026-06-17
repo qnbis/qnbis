@@ -8,7 +8,7 @@
 <br>
 
 <div align="center">
-  <a href="https://open.spotify.com/track/7MXVkk9YMqq6vqLSZcg00c">
+  <a href="https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV">
     <img src="spotify.svg" alt="Spotify Player" width="400">
   </a>
 </div>
