@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="xp-title-fld" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0058e6" />
+      <stop offset="10%" stop-color="#3a93ff" />
+      <stop offset="100%" stop-color="#0058e6" />
+    </linearGradient>
+    <style>
+      .window { fill: #ece9d8; stroke: #0058e6; stroke-width: 3; rx: 8; ry: 8; }
+      .titlebar { fill: url(#xp-title-fld); }
+      .title-text { font-family: 'Tahoma', sans-serif; font-size: 14px; font-weight: bold; fill: white; text-shadow: 1px 1px 2px #000; }
+      .btn { fill: #ece9d8; stroke: #fff; stroke-width: 1; rx: 3; }
+      .btn-close { fill: #e04343; stroke: #fff; stroke-width: 1; rx: 3; }
+      .btn-text { font-family: 'Tahoma', sans-serif; font-size: 12px; font-weight: bold; fill: white; }
+      .btn-text-black { font-family: 'Tahoma', sans-serif; font-size: 12px; font-weight: bold; fill: black; }
+      .content-bg { fill: #fff; stroke: #7f9db9; stroke-width: 2; }
+      .icon-text { font-family: 'Tahoma', sans-serif; font-size: 11px; fill: #000; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="280" class="window" />
+  <path d="M10 18 Q10 10 18 10 L382 10 Q390 10 390 18 L390 40 L10 40 Z" class="titlebar" />
+  <text x="20" y="28" class="title-text">My Projects</text>
+  
+  <rect x="310" y="15" width="20" height="20" class="btn" />
+  <text x="316" y="29" class="btn-text-black">_</text>
+  <rect x="335" y="15" width="20" height="20" class="btn" />
+  <rect x="339" y="19" width="12" height="12" fill="none" stroke="black" stroke-width="2" />
+  <rect x="360" y="15" width="20" height="20" class="btn-close" />
+  <text x="365" y="30" class="btn-text">X</text>
+
+  <!-- Toolbar -->
+  <rect x="12" y="42" width="376" height="30" fill="#ece9d8" />
+  <text x="20" y="62" font-family="Tahoma" font-size="12" fill="#000">File  Edit  View  Favorites  Tools  Help</text>
+  <line x1="12" y1="72" x2="388" y2="72" stroke="#aca899" stroke-width="1" />
+
+  <rect x="15" y="80" width="370" height="200" class="content-bg" />
+  
+  <!-- Folder Icons -->
+  <g transform="translate(60, 100)">
+    <path d="M0 10 L15 10 L20 15 L40 15 L40 35 L0 35 Z" fill="#ffca28" stroke="#f57f17" stroke-width="1"/>
+    <text x="20" y="50" class="icon-text">Secret_App</text>
+  </g>
+
+  <g transform="translate(140, 100)">
+    <path d="M0 10 L15 10 L20 15 L40 15 L40 35 L0 35 Z" fill="#ffca28" stroke="#f57f17" stroke-width="1"/>
+    <text x="20" y="50" class="icon-text">Scripts</text>
+  </g>
+
+  <g transform="translate(220, 100)">
+    <path d="M0 10 L15 10 L20 15 L40 15 L40 35 L0 35 Z" fill="#ffca28" stroke="#f57f17" stroke-width="1"/>
+    <text x="20" y="50" class="icon-text">Bots</text>
+  </g>
+
+  <!-- File Icon -->
+  <g transform="translate(300, 100)">
+    <rect x="5" y="5" width="30" height="35" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+    <path d="M25 5 L35 15 L25 15 Z" fill="#90caf9"/>
+    <text x="20" y="50" class="icon-text">todo.txt</text>
+  </g>
+  
+  <g transform="translate(60, 180)">
+    <rect x="5" y="5" width="30" height="35" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+    <path d="M25 5 L35 15 L25 15 Z" fill="#90caf9"/>
+    <text x="20" y="50" class="icon-text">passwords.txt</text>
+  </g>
+  
+  <g transform="translate(140, 180)">
+    <path d="M0 10 L15 10 L20 15 L40 15 L40 35 L0 35 Z" fill="#ffca28" stroke="#f57f17" stroke-width="1"/>
+    <text x="20" y="50" class="icon-text">Old_Memes</text>
+  </g>
+</svg>

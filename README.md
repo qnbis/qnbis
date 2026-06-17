@@ -1,13 +1,33 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dark_glass.svg">
-    <img src="light_glass.svg" alt="Glass Banner" width="800">
-  </picture>
+  <img src="xp_banner.svg" alt="XP Terminal" width="800">
 </div>
 
 <br>
 
 <div align="center">
+  <table>
+    <tr>
+      <td align="center" style="border:none;">
+        <img src="xp_folder.svg" alt="XP Folder" width="380">
+      </td>
+      <td align="center" style="border:none;">
+        <img src="xp_error.svg" alt="XP Error" width="380">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=qnbis&show_icons=true&theme=tokyonight&hide_border=true" width="380" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=qnbis&theme=tokyonight&hide_border=true" width="380" />
+</div>
+
+<br>
+
+<div align="center">
+  <h3>🎵 Winamp Player (Just Kidding, it's Spotify) 🎵</h3>
   <a href="https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV">
     <img src="spotify_player.svg" alt="Spotify Player" width="400">
   </a>
@@ -16,16 +36,11 @@
 <br>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Python-2C2C2E?style=flat&logo=python&logoColor=white" alt="Python" height="25"/>
-  <img src="https://img.shields.io/badge/TypeScript-2C2C2E?style=flat&logo=typescript&logoColor=white" alt="TS" height="25"/>
-  <img src="https://img.shields.io/badge/React-2C2C2E?style=flat&logo=react&logoColor=white" alt="React" height="25"/>
-  <img src="https://img.shields.io/badge/Docker-2C2C2E?style=flat&logo=docker&logoColor=white" alt="Docker" height="25"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-2C2C2E?style=flat&logo=postgresql&logoColor=white" alt="Postgres" height="25"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=qnbis&theme=flat&no-frame=true&row=1&column=7" />
 </div>
 
-<br><br>
+<br>
 
 <div align="center">
-  <!-- Счетчик работает для пользователя qnbis -->
-  <img src="https://komarev.com/ghpvc/?username=qnbis&label=VIEWS&color=2C2C2E&label_color=1C1C1E&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=qnbis&label=SYSTEM%20VISITS&color=0058e6&label_color=ece9d8&style=flat" alt="Profile Views" />
 </div>
