@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+      
+      /* Base Styles */
+      .bg-main { fill: #0b0f19; }
+      .text-title { font-family: 'Outfit', sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; letter-spacing: 1px; }
+      .text-subtitle { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 400; fill: #9ca3af; }
+      .text-mono { font-family: 'Fira Code', monospace; font-size: 11px; fill: #38bdf8; }
+      .text-nav { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; fill: #6b7280; letter-spacing: 0.5px; transition: fill 0.3s; }
+      .text-nav-active { fill: #38bdf8; }
+      
+      /* Glowing Effects */
+      .glow-blue { filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+      .glow-green { filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.4)); }
+      .glow-purple { filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.4)); }
+      .glow-orange { filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4)); }
+      
+      /* Cards and Containers */
+      .glass-card { fill: rgba(17, 24, 39, 0.7); stroke: rgba(255, 255, 255, 0.08); stroke-width: 1; rx: 12px; }
+      .icon-container { fill: rgba(31, 41, 55, 0.5); stroke: rgba(255, 255, 255, 0.05); stroke-width: 1; rx: 8px; }
+      
+      /* Animations */
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.6; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes gradient-shift {
+        0% { stop-color: #0b0f19; }
+        50% { stop-color: #1e1b4b; }
+        100% { stop-color: #0b0f19; }
+      }
+      
+      .anim-float { animation: float 4s ease-in-out infinite; }
+      .anim-float-delay-1 { animation: float 4s ease-in-out infinite; animation-delay: 1s; }
+      .anim-float-delay-2 { animation: float 4s ease-in-out infinite; animation-delay: 2s; }
+      .anim-float-delay-3 { animation: float 4s ease-in-out infinite; animation-delay: 3s; }
+      .anim-spin { animation: spin-slow 12s linear infinite; transform-origin: center; }
+      .anim-blink { animation: cursor-blink 1s step-end infinite; }
+      
+      /* Navigation dot pulsing */
+      .nav-dot { fill: #10b981; animation: pulse-glow 2s infinite; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bg-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <linearGradient id="gemini-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="gpt-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="claude-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <linearGradient id="midjourney-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="800" height="320" rx="16" fill="url(#bg-glow)" />
+
+  <!-- Grid Overlay for tech aesthetic -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,40 L 800,40 M 0,80 L 800,80 M 0,120 L 800,120 M 0,160 L 800,160 M 0,200 L 800,200 M 0,240 L 800,240 M 0,280 L 800,280" />
+    <path d="M 80,0 L 80,320 M 160,0 L 160,320 M 240,0 L 240,320 M 320,0 L 320,320 M 400,0 L 400,320 M 480,0 L 480,320 M 560,0 L 560,320 M 640,0 L 640,320 M 720,0 L 720,320" />
+  </g>
+
+  <!-- Glowing Background Orbs -->
+  <circle cx="150" cy="160" r="100" fill="#38bdf8" opacity="0.08" filter="blur(60px)" />
+  <circle cx="650" cy="180" r="110" fill="#a855f7" opacity="0.08" filter="blur(60px)" />
+
+  <!-- Navbar Simulated -->
+  <g transform="translate(30, 20)">
+    <!-- Simulated Logo / Brand -->
+    <text x="0" y="15" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="1.5px">QNBIS<tspan fill="#38bdf8">.DEV</tspan></text>
+    
+    <!-- Active Nav Indicator -->
+    <circle cx="140" cy="11" r="3.5" class="nav-dot" />
+    <text x="150" y="14" class="text-nav text-nav-active">DASHBOARD</text>
+    
+    <text x="260" y="14" class="text-nav">PROJECTS</text>
+    <text x="360" y="14" class="text-nav">AI_CORE</text>
+    
+    <!-- System Status on Right -->
+    <rect x="620" y="0" width="120" height="20" rx="4" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.2)" stroke-width="1" />
+    <circle cx="630" cy="10" r="3" fill="#10b981" />
+    <text x="640" y="13" font-family="'Fira Code', monospace" font-size="9" fill="#10b981" font-weight="bold">LINKED: ONLINE</text>
+  </g>
+
+  <line x1="30" y1="55" x2="770" y2="55" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+  <!-- Left: Main Headline & Info -->
+  <g transform="translate(30, 90)">
+    <!-- Terminal prompt info -->
+    <text x="0" y="0" class="text-mono">&gt; initializing profile_agent.sh...</text>
+    <text x="0" y="18" class="text-mono" fill="#10b981">&gt; connection to neural networks established</text>
+
+    <!-- Main Title -->
+    <text x="0" y="55" class="text-title">AI-DRIVEN DEVELOPER</text>
+    <text x="0" y="85" class="text-title" fill="#38bdf8">QNBIS</text>
+    
+    <!-- Subtitle / Bio -->
+    <text x="0" y="120" class="text-subtitle">Crafting modern web architectures &amp; orchestration layers</text>
+    <text x="0" y="138" class="text-subtitle">integrated with production-grade artificial intelligence.</text>
+
+    <!-- Interactive Terminal Command -->
+    <rect x="0" y="165" width="280" height="32" rx="6" fill="#030712" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+    <text x="12" y="185" font-family="'Fira Code', monospace" font-size="11" fill="#9ca3af">
+      <tspan fill="#38bdf8">qnbis:~$</tspan> npx run start-journey
+    </text>
+    <rect x="235" y="175" width="6" height="12" fill="#38bdf8" class="anim-blink" />
+  </g>
+
+  <!-- Right: Neural Network Integrations (Neat layout) -->
+  <g transform="translate(470, 75)">
+    <!-- Outer Card Container -->
+    <rect width="300" height="215" class="glass-card" />
+    
+    <!-- Section Title -->
+    <text x="20" y="25" font-family="'Outfit', sans-serif" font-size="11" font-weight="800" fill="#9ca3af" letter-spacing="1px">AI CORE PLUGINS &amp; SYNERGY</text>
+    
+    <!-- Grid of AI Tools (2x2 layout) -->
+    
+    <!-- 1. Gemini -->
+    <g transform="translate(20, 45)" class="anim-float">
+      <rect width="120" height="65" class="icon-container" />
+      <g transform="translate(15, 12)">
+        <!-- Gemini Icon Sparkle (Beautifully Crafted vector) -->
+        <g class="glow-blue">
+          <path d="M 18,0 Q 18,18 36,18 Q 18,18 18,36 Q 18,18 0,18 Q 18,18 18,0 Z" fill="url(#gemini-grad)" />
+        </g>
+        <text x="48" y="18" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff">Gemini</text>
+        <text x="48" y="30" font-family="'Fira Code', monospace" font-size="8" fill="#a855f7">v1.5 Pro</text>
+      </g>
+    </g>
+
+    <!-- 2. Claude (Anthropic) -->
+    <g transform="translate(160, 45)" class="anim-float-delay-1">
+      <rect width="120" height="65" class="icon-container" />
+      <g transform="translate(15, 12)">
+        <!-- Claude Stylized Icon -->
+        <g class="glow-orange">
+          <!-- Anthropic-style neat multi-line geometric layout -->
+          <path d="M 8,4 L 28,4 L 32,15 L 20,32 L 4,18 Z" fill="none" stroke="url(#claude-grad)" stroke-width="3" stroke-linejoin="round" />
+          <circle cx="18" cy="16" r="4" fill="url(#claude-grad)" />
+        </g>
+        <text x="48" y="18" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff">Claude</text>
+        <text x="48" y="30" font-family="'Fira Code', monospace" font-size="8" fill="#f97316">v3.5 Sonnet</text>
+      </g>
+    </g>
+
+    <!-- 3. OpenAI / ChatGPT -->
+    <g transform="translate(20, 130)" class="anim-float-delay-2">
+      <rect width="120" height="65" class="icon-container" />
+      <g transform="translate(15, 12)">
+        <!-- OpenAI Spiral Icon -->
+        <g class="glow-green">
+          <g transform="translate(18, 18) scale(0.65)">
+            <g class="anim-spin" transform="translate(0,0)">
+              <!-- Draw spiral petals -->
+              <path d="M0,0 C2,5 8,5 10,2 C12,-1 10,-8 5,-10 C0,-12 -8,-10 -10,-5 C-12,0 -10,8 -5,10 Z" fill="none" stroke="url(#gpt-grad)" stroke-width="3" />
+              <circle cx="0" cy="0" r="3" fill="#34d399" />
+              <path d="M 0,-15 A 15,15 0 0,1 15,0" fill="none" stroke="#34d399" stroke-width="2" />
+              <path d="M 0,15 A 15,15 0 0,1 -15,0" fill="none" stroke="#34d399" stroke-width="2" />
+            </g>
+          </g>
+        </g>
+        <text x="48" y="18" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff">ChatGPT</text>
+        <text x="48" y="30" font-family="'Fira Code', monospace" font-size="8" fill="#10b981">GPT-4o</text>
+      </g>
+    </g>
+
+    <!-- 4. Midjourney / Generative AI -->
+    <g transform="translate(160, 130)" class="anim-float-delay-3">
+      <rect width="120" height="65" class="icon-container" />
+      <g transform="translate(15, 12)">
+        <!-- Midjourney boat/star sparkle design -->
+        <g class="glow-purple">
+          <path d="M5,22 C10,12 26,12 31,22 Z" fill="none" stroke="url(#midjourney-grad)" stroke-width="2.5" />
+          <path d="M12,22 L18,7 L24,22" fill="none" stroke="url(#midjourney-grad)" stroke-width="2" />
+          <circle cx="18" cy="4" r="2" fill="#c084fc" />
+        </g>
+        <text x="48" y="18" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff">Midjourney</text>
+        <text x="48" y="30" font-family="'Fira Code', monospace" font-size="8" fill="#a855f7">v6.0 Alpha</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
