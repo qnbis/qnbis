@@ -7,14 +7,14 @@
       .text-details { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 10px; fill: #9ca3af; }
       
       /* Progress Bar Animation */
-      .progress-bg { fill: #282828; rx: 2px; }
-      .progress-fill { fill: #38bdf8; rx: 2px; animation: progressLoad 4s ease-in-out infinite alternate; }
+      .progress-bg { fill: #282828; }
+      .progress-fill { fill: #38bdf8; animation: progressLoad 4s ease-in-out infinite alternate; }
       
       /* Terminal Cursor Animation */
       .cursor { fill: #10b981; animation: blink 1s step-end infinite; }
       
       /* Chip Pulsing */
-      .glow-ring { stroke: #10b981; stroke-width: 1.5; fill: none; opacity: 0.4; animation: pulseRing 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite; }
+      .glow-ring { stroke: #10b981; stroke-width: 1.5; fill: none; opacity: 0.4; animation: pulseRing 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite; transform-origin: center; }
       .glow-dot { fill: #10b981; }
 
       @keyframes progressLoad {
@@ -62,7 +62,7 @@
     
     <!-- Status Dot -->
     <g transform="translate(48, 8)">
-      <circle cx="0" cy="0" r="8" class="glow-ring" transform-origin="center" />
+      <circle cx="0" cy="0" r="8" class="glow-ring" />
       <circle cx="0" cy="0" r="3.5" class="glow-dot" />
     </g>
 
@@ -76,8 +76,8 @@
     <text x="0" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#6b7280" letter-spacing="0.5px">AUTONOMY ENGINE STATUS</text>
 
     <!-- Progress Bar (Dynamic slider) -->
-    <rect x="0" y="74" width="220" height="6" class="progress-bg" />
-    <rect x="0" y="74" width="180" height="6" class="progress-fill" />
+    <rect x="0" y="74" width="220" height="6" rx="2" ry="2" class="progress-bg" />
+    <rect x="0" y="74" width="180" height="6" rx="2" ry="2" class="progress-fill" />
   </g>
 
 </svg>
