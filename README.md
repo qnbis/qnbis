@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="banner.svg" alt="qnbis" width="800">
+  <img src="Frame 18.png" alt="qnbis" width="800">
 </div>
