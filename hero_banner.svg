@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="400" viewBox="0 0 800 400">
   <defs>
     <style>
-      .bg { fill: #3a3a3a; }
+      .bg { fill: #1a1a1a; }
       .title { font-family: Georgia, "Times New Roman", serif; font-size: 42px; font-weight: normal; font-style: italic; fill: #ffffff; }
       .subtitle { font-family: Georgia, "Times New Roman", serif; font-size: 18px; font-weight: normal; font-style: italic; fill: #8a8a8a; }
       .sp-bg { fill: #282828; }
