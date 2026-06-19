@@ -1,13 +1,3 @@
 <div align="center">
-  <a href="https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV" target="_blank">
-    <img src="spotify_player.svg?v=4" alt="Spotify Player" width="400">
-  </a>
-  
-  <br><br>
-  
-  <img src="profile_card.svg?v=4" alt="Profile Details" width="400">
-  
-  <br><br>
-  
-  <img src="ai_engines_card.svg?v=4" alt="AI Engines Stack" width="400">
+  <img src="hero_banner.svg" alt="qnbis" width="800">
 </div>
